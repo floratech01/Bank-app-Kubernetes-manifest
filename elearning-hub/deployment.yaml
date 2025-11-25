@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: medplux-deployment
+  labels:
+    app: medplux
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: medplux
+  template:
+    metadata:
+      labels:
+        app: medplux
+    spec:
+      containers:
+      - name: medplux
+        image: smartcloud2022/edu:v1
+        ports:
+        - containerPort: 80
