@@ -11,11 +11,11 @@ spec:
   ingressClassName: external-nginx
   tls:
   - hosts:
-    - bankapi.floratech.online  # bankend url
-    - bank.floratech.online     # frontend url
-    secretName: bank-floratech-online
+    - bankapi.floracloudtech.online   # bankend url
+    - bank.floracloudtech.online      # frontend url
+    secretName: bank-floracloudtech-online
   rules:
-  - host: bank.floratech.online
+  - host: bank.
     http:
       paths:
       - path: /
