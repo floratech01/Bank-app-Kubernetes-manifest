@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: bank-config
 data:
-  DB_HOST: "34.27.23.176"
+  DB_HOST: "production-mysql-db.c25qoyg42x55.us-east-1.rds.amazonaws.com"
   DB_PORT: "3306"
   DB_NAME: "online_banking_system"
-  REACT_APP_API_URL: https://bankapi.floratech.online
+  REACT_APP_API_URL: http://backend-service:8080
