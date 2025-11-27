@@ -15,7 +15,7 @@ spec:
     - bank.floracloudtech.online      # frontend url
     secretName: bank-floracloudtech-online
   rules:
-  - host: bank.
+  - host: bank.floracloudtech.online
     http:
       paths:
       - path: /
@@ -25,7 +25,7 @@ spec:
             name: bank-frontend-service
             port:
               number: 3000
-  - host: bankapi.floratech.online
+  - host: bankapi.floracloudtech.online
     http:
       paths:
       - path: /
